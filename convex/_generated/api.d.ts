@@ -8,9 +8,8 @@
  * @module
  */
 
-import type * as auth from "../auth.js";
-import type * as consumables from "../consumables.js";
-import type * as http from "../http.js";
+import type * as masterData from "../masterData.js";
+import type * as moduleOptions from "../moduleOptions.js";
 
 import type {
   ApiFromModules,
@@ -19,9 +18,8 @@ import type {
 } from "convex/server";
 
 declare const fullApi: ApiFromModules<{
-  auth: typeof auth;
-  consumables: typeof consumables;
-  http: typeof http;
+  masterData: typeof masterData;
+  moduleOptions: typeof moduleOptions;
 }>;
 
 /**
